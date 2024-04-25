@@ -12,14 +12,17 @@ public class HelloController {
 
     @Autowired
     private NameServiceClient nameServiceClient;
+    @Autowired
+    private TitleServiceClient titleServiceClient;
 
     @GetMapping("/hello")
     public String getHello(Model model) {
         ResultData info = nameServiceClient.getInfo();
+        ResultData titleInfo = titleServiceClient.getInfo();
         model.addAttribute("data1",info.getData1());
         model.addAttribute("data2",info.getData2());
-        model.addAttribute("data3",info.getData3());
-        model.addAttribute("data4",info.getData4());
+        model.addAttribute("title1",titleInfo.getData1());
+        model.addAttribute("title2",titleInfo.getData2());
         return "index";
     }
 }

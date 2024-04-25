@@ -4,9 +4,9 @@ import com.kpaas.helloservice.model.ResultData;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 
-@FeignClient(name = "name-service",url="${msa.gateway-url}")
-public interface NameServiceClient {
+@FeignClient(name = "title-service",url="${msa.gateway-url}")
+public interface TitleServiceClient {
 
-    @GetMapping("/info")
+    @GetMapping("/title-info")
     ResultData getInfo();
 }

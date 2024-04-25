@@ -35,7 +35,7 @@ and is wrapped around the whole page content, except for the footer in this exam
                 </div>
 
                 <div class="w3-container">
-                    <p th:text="${data1}"></p>
+                    <p id="data1" th:text="${data1}"></p>
                     <div class="w3-row">
                         <div class="w3-col m4 w3-hide-small">
                         </div>
@@ -51,7 +51,7 @@ and is wrapped around the whole page content, except for the footer in this exam
                 </div>
 
                 <div class="w3-container">
-                    <p th:text="${data2}"></p>
+                    <p id="data2" th:text="${data2}"></p>
                     <div class="w3-row">
                         <div class="w3-col m4 w3-hide-small">
                         </div>
@@ -78,10 +78,10 @@ and is wrapped around the whole page content, except for the footer in this exam
                 </div>
                 <ul class="w3-ul w3-hoverable w3-white">
                     <li class="w3-padding-16">
-                        <span class="w3-large" th:text="${data3}"></span><br>
+                        <span id="title-data1" class="w3-large" th:text="${title1}"></span><br>
                     </li>
                     <li class="w3-padding-16">
-                        <span class="w3-large" th:text="${data4}"></span><br>
+                        <span id="title-data2" class="w3-large" th:text="${title2}"></span><br>
                     </li>
                 </ul>
             </div>
@@ -93,8 +93,8 @@ and is wrapped around the whole page content, except for the footer in this exam
                     <h4>Tags</h4>
                 </div>
                 <div class="w3-container w3-white">
-                    <p><span class="w3-tag w3-light-grey w3-small w3-margin-bottom" th:text="${data3}"></span>
-                        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom" th:text="${data4}"></span>
+                    <p><span id="title-data3" class="w3-tag w3-light-grey w3-small w3-margin-bottom" th:text="${title1}"></span>
+                        <span id="title-data4" class="w3-tag w3-light-grey w3-small w3-margin-bottom" th:text="${title2}"></span>
                     </p>
                 </div>
             </div>
